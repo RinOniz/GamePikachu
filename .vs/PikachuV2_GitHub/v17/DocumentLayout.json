@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\change.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\change.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\howtoplaypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\howtoplaypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\assets\\scripts\\bgmmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bgmmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|d:\\gameunity\\pikachu\\pikachuv2_github\\assets\\scripts\\aistatshud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aistatshud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\assets\\scripts\\aibot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aibot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\assets\\scripts\\linechecksolution\\linecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\linechecksolution\\linecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\assets\\scripts\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEEF417F-297A-DE8F-23E2-46F4D7A65017}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +46,126 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Change.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\Change.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Change.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\Change.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Change.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:33:02.875Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "HowToPlayPanel.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\HowToPlayPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HowToPlayPanel.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\HowToPlayPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HowToPlayPanel.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:32:41.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\GameController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:32:37.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Board.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\Board.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Board.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\Board.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Board.cs",
+              "ViewState": "AgIAANMBAAAAAAAAAAAUwJoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:32:20.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AIStatsHUD.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\AIStatsHUD.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AIStatsHUD.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\AIStatsHUD.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AIStatsHUD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:26:38.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AIBot.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\AIBot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AIBot.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\AIBot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AIBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:26:33.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BGMManager.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\BGMManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BGMManager.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\BGMManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BGMManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:26:24.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LineCheck.cs",
+              "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\LineCheckSolution\\LineCheck.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LineCheckSolution\\LineCheck.cs",
+              "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\LineCheckSolution\\LineCheck.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LineCheckSolution\\LineCheck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:26:22.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SettingsManager.cs",
               "DocumentMoniker": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\SettingsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsManager.cs",
               "ToolTip": "D:\\GameUnity\\Pikachu\\PikachuV2_GitHub\\Assets\\Scripts\\SettingsManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SettingsManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T09:03:20.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T09:03:20.82Z"
             }
           ]
         },

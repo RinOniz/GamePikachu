@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Tinh toan huong di tu vi tri truoc do.
 public class Position
 {
     public int row, col;

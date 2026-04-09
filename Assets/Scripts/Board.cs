@@ -92,7 +92,6 @@ public class Board : MonoBehaviour
             duplicatedList.AddRange(new List<int> { remainingPairs[i], remainingPairs[i] });    
         }
 
-        // Thuat toan Fisher-Yates Shuffle  
         for (int i = 0; i < duplicatedList.Count; i++)
         {
             int temp = duplicatedList[i];
@@ -176,7 +175,6 @@ public class Board : MonoBehaviour
 
         currNodesExpanded = 0;
 
-        // neu vi tri dich bi chan boi 4 o xung quanh thi khong the di den duoc
         if (IsEndPositionBlocked(startPos, endPos))
         {
             return false;
@@ -185,26 +183,26 @@ public class Board : MonoBehaviour
         Queue<Node> nodes = new Queue<Node>();
         Node start = new Node(startPos.row, startPos.col);
 
-        start.pathHistory = "";   // lich su di chuyen
-        start.positions = new List<Position>(); // danh sach duong di 
+        start.pathHistory = "";  
+        start.positions = new List<Position>(); 
         start.positions.Add(startPos);
-        start.turnCount = 0;   // so lan re 
-        start.isStartNode = true;   // danh dau (flag) node bat dau
+        start.turnCount = 0;   
+        start.isStartNode = true;   
 
-        nodes.Enqueue(start);   // them node start vao queue
+        nodes.Enqueue(start);   
 
         while (nodes.Count != 0)
         {
-            Node currNode = nodes.Dequeue(); // lay node o dau hang doi
+            Node currNode = nodes.Dequeue(); 
 
             currNodesExpanded++;
             
-            if (currNode.turnCount > 2) // toi da 2 lan re
+            if (currNode.turnCount > 2) 
             {
-                continue;   // bo qua node hien tai
+                continue;   
             }
 
-            if (currNode.row == endPos.row && currNode.col == endPos.col) // win condition, neu node hien tai la vi tri dich
+            if (currNode.row == endPos.row && currNode.col == endPos.col) 
             {
                 List<Position> path = currNode.positions;
 
@@ -219,7 +217,6 @@ public class Board : MonoBehaviour
                 return true;   
             }
 
-            // vet dau loang ra 4 huong
             int[,] directions = new int[4, 2] {
                 { 0, 1 },   // phai
                 { 0, -1 },  // trai
@@ -232,15 +229,14 @@ public class Board : MonoBehaviour
                 int row = currNode.row + directions[i, 0];
                 int col = currNode.col + directions[i, 1];
 
-                if (!IsValid(row, col))  // check co nam trong idGrid khong
+                if (!IsValid(row, col)) 
                 {
                     continue;
                 }
 
-                int currNodeValue = idGrid[currNode.row, currNode.col];  // gia tri hien tai
+                int currNodeValue = idGrid[currNode.row, currNode.col];  
 
-                // node start la node dac biet, ngoai le de BFS bat dau loang, tu node thu 2 tro di chi dc di qua o trong (-1)
-                if (currNode.isStartNode || currNodeValue == -1)  // tu node start di dc moi huong, cac node sau chi di qua o trong (-1)
+                if (currNode.isStartNode || currNodeValue == -1)
                 {
                     bool skip = false;
 
@@ -273,15 +269,7 @@ public class Board : MonoBehaviour
             }
         }
 
-        return false;   // nodes.Count == 0 -> khong tim thay dich
-
-        /* 
-        - Loang 4 huong tu start
-        - Chi di qua o trong (-1) neu khong phai o start   
-        - Gioi han so lan re <= 2
-        - Luu duong di
-        - Gap end -> ve duong di -> return true
-        */
+        return false;   
     }
 
     public bool CheckConnectionDFS(Position startPos, Position endPos, bool drawPath)
@@ -295,7 +283,6 @@ public class Board : MonoBehaviour
             return false;
         }
 
-        // Dung Stack thay vi Queue giong BFS
         Stack<Node> nodes = new Stack<Node>();
         Node start = new Node(startPos.row, startPos.col);
 
@@ -305,11 +292,11 @@ public class Board : MonoBehaviour
         start.turnCount = 0;
         start.isStartNode = true;
 
-        nodes.Push(start); // Push thay vi Enqueue
+        nodes.Push(start); 
 
         while (nodes.Count != 0)
         {
-            Node currNode = nodes.Pop(); // Pop thay vi Dequeue
+            Node currNode = nodes.Pop(); 
 
             currNodesExpanded++;
 
@@ -377,10 +364,11 @@ public class Board : MonoBehaviour
                     node.positions = positions;
                     node.AddPosition(new Position(row, col));
 
-                    nodes.Push(node); // Push thay vi Enqueue
+                    nodes.Push(node); 
                 }
             }
         }
+
         return false;
     }
 
@@ -395,7 +383,6 @@ public class Board : MonoBehaviour
             return false;
         }
 
-        // A* dung List de chua cac node dang cho duyet (Open Set)
         List<Node> openSet = new List<Node>();
 
         Node start = new Node(startPos.row, startPos.col);
@@ -410,22 +397,18 @@ public class Board : MonoBehaviour
 
         while (openSet.Count > 0)
         {
-            // Di tim node co chi phi F thap nhat de duyet truoc
             int lowestF = int.MaxValue;
             int bestIndex = 0;
 
             for (int i = 0; i < openSet.Count; i++)
             {
-                // g(n): quang duong da di (so o trong positions)
                 int g = openSet[i].positions.Count;
 
-                // H(n): heuristic - khoang cach manhattan den dich (khong tinh den re) = |x1 - x2| + |y1 - y2|
                 int h = Mathf.Abs(endPos.row - openSet[i].row) + Mathf.Abs(endPos.col - openSet[i].col);
 
                 // Max ban co la ~ 30 nen co the dat 40 la max ping, an toan thi 50
                 int turnPenalty = openSet[i].turnCount * 50;
 
-                // f(n) = g(n) + h(n) + tien phat be lai
                 int f = g + h + turnPenalty;
 
                 if (f < lowestF)
@@ -435,7 +418,6 @@ public class Board : MonoBehaviour
                 }
             }
 
-            // Lay node tot nhat ra khỏi open set de duyet
             Node currNode = openSet[bestIndex];
             openSet.RemoveAt(bestIndex);
 
@@ -506,7 +488,7 @@ public class Board : MonoBehaviour
                     node.positions = positions;
                     node.AddPosition(new Position(row, col));
 
-                    openSet.Add(node); // Them vao open set de duyet sau
+                    openSet.Add(node); 
                 }
             }
         }
@@ -514,27 +496,27 @@ public class Board : MonoBehaviour
         return false;
     }
     
-    // Tim kiem dua tren kinh nghiem choi
     public Position[] FindValidPairs()
     {
-        // Cap lien ke nhau 
         Position[] adjacentPair = FindAdjacentPairs();
+
         if (adjacentPair != null)
         {
             Debug.Log("Lien ke");
+
             return adjacentPair;
         }
 
-        // Cap o mep
         Position[] edgePair = FindEdgePairs();
         if (edgePair != null)
         {
             Debug.Log("Mep");
+
             return edgePair;
         }
 
-        // Vet can
         Debug.Log("Vet can");
+
         return FindNormalPairs();
     }
 
@@ -551,7 +533,6 @@ public class Board : MonoBehaviour
                     continue;
                 }
 
-                // Check con ben phai
                 if (c + 1 < totalCols - 1 && idGrid[r, c + 1] == id)
                 {
                     if (CheckConnection(new Position(r, c), new Position(r, c + 1), false)) 
@@ -560,7 +541,6 @@ public class Board : MonoBehaviour
                     }
                 }
 
-                // Check con ben duoi
                 if (r + 1 < totalRows - 1 && idGrid[r + 1, c] == id)
                 {
                     if (CheckConnection(new Position(r, c), new Position(r + 1, c), false))
@@ -586,7 +566,6 @@ public class Board : MonoBehaviour
                 {
                     int depth = GetLayerDepth(r, c);
 
-                    // chi lay nhung o trong 2 lop mep ngoai
                     if (depth <= 2)
                     {
                         edgeTiles.Add(new Position(r, c));
@@ -595,7 +574,6 @@ public class Board : MonoBehaviour
             }
         }
 
-        // lop mep ngoai duoc uu tien check truoc 
         edgeTiles.Sort((p1, p2) =>
         {
             int depth1 = GetLayerDepth(p1.row, p1.col);
@@ -639,7 +617,7 @@ public class Board : MonoBehaviour
 
                 for (int r2 = r1; r2 < totalRows; r2++)
                 {
-                    int startCol = (r1 == r2) ? c1 + 1 : 0; // Neu cung hang thi chi check con ben phai, neu khac hang thi check tu dau hang
+                    int startCol = (r1 == r2) ? c1 + 1 : 0; 
 
                     for (int c2 = startCol; c2 < totalCols; c2++)
                     {
@@ -756,17 +734,14 @@ public class Board : MonoBehaviour
         return Mathf.Min(distTop, distBottom, distLeft, distRight);
     }
 
-    // Ham di chuyen vien gach tu vi tri cu (fromRow, col) den vi tri moi (toRow, col)
     private void MoveTile(int fromRow, int col, int toRow)
     {
-        // chuyen du lieu logic
         idGrid[toRow, col] = idGrid[fromRow, col];
-        idGrid[fromRow, col] = -1; // o cu thanh o trong (-1)
+        idGrid[fromRow, col] = -1; 
 
         tileObjects[toRow, col] = tileObjects[fromRow, col];
         tileObjects[fromRow, col] = null;
 
-        // update thong tin tile
         GameObject tileObj = tileObjects[toRow, col];
 
         Tile tileData = tileObj.GetComponent<Tile>();
@@ -778,20 +753,17 @@ public class Board : MonoBehaviour
 
     private void ShiftDown()
     {
-        // Duyet tung cot, bo 2 cot hai ben mep
         for (int c = 1; c < totalCols - 1; c++)
         {
-            // Duyet tu duoi len tren, bo hang mep duoi va tren
             for (int r = totalRows - 2; r >= 1; r--)
             {
                 if (idGrid[r, c] == -1)
                 {
-                    // Di tim vien gach dau tien nam ben tren no
                     for (int k = r - 1; k >= 1; k--)
                     {
-                        if (idGrid[k, c] != -1) // Tim thay
+                        if (idGrid[k, c] != -1) 
                         {
-                            MoveTile(k, c, r); // Chuyen xuong vi tri r
+                            MoveTile(k, c, r); 
 
                             break;
                         }
@@ -805,17 +777,15 @@ public class Board : MonoBehaviour
     {
         for (int c = 1; c < totalCols - 1; c++)
         {
-            // Duyet tu tren xuong duoi, bo hang mep tren va duoi
             for (int r = 1; r < totalRows - 1; r++)
             {
                 if (idGrid[r, c] == -1)
                 {
-                    // Di tim vien gach dau tien nam ben duoi no
                     for (int k = r + 1; k < totalRows - 1; k++)
                     {
                         if (idGrid[k, c] != -1)
                         {
-                            MoveTile(k, c, r); // Chuyen no len vi tri r
+                            MoveTile(k, c, r); 
 
                             break;
                         }
@@ -829,10 +799,9 @@ public class Board : MonoBehaviour
     {
         Position[] pair = FindValidPairs();
 
-        return pair != null; // true neu con duong, false neu het duong
+        return pair != null; 
     }
 
-    // Ham kiem tra xem vi tri (row, col) co nam trong idGrid hay khong
     private bool IsValid(int row, int col)
     {
         if (row < 0 || col < 0 || row >= totalRows || col >= totalCols)
@@ -843,7 +812,6 @@ public class Board : MonoBehaviour
         return true;
     }
 
-    // Kiem tra xem o dich co bi chan khong, neu khong thi true luon khong can tim duong di
     private bool IsEndPositionBlocked(Position startPos, Position endPos)
     {
         int[,] directions = new int[4, 2] { 
@@ -876,6 +844,7 @@ public class Board : MonoBehaviour
         if (hintTileOne != null && hintTileTwo != null)
         {
             Color cleanColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+
             hintTileOne.transform.GetChild(0).GetComponent<SpriteRenderer>().color = cleanColor;
             hintTileTwo.transform.GetChild(0).GetComponent<SpriteRenderer>().color = cleanColor;
         }
@@ -895,7 +864,6 @@ public class Board : MonoBehaviour
         hintTileTwo = null;
     }
 
-    // Giup Bot lay duoc gameobject de "gia vo click" vao tile do
     public GameObject GetTileObject(int row, int col)
     {
         return tileObjects[row, col];

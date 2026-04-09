@@ -3,9 +3,10 @@
 public class BGMManager : MonoBehaviour
 {
     public static BGMManager instance;
+
     private AudioSource audioSource;
 
-    void Awake()
+    private void Awake()
     {
         if (instance == null)
         {

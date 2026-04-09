@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-// Luu tru lich su, tinh so lan re khi them vi tri moi
 public class Node
 {
     public int row, col, turnCount;
@@ -15,7 +14,6 @@ public class Node
         col = _col;
     }
 
-    // Them mot vi tri vao danh sach vi tri
     public void AddPosition(Position position)
     {
         if (positions.Count == 0) 

@@ -53,37 +53,39 @@ public class HowToPlayPanel : MonoBehaviour
 
     private IEnumerator PlayTutorialAnimation()
     {
-        int step = 0; // Biến đếm số lượt đã chạy
+        int step = 0; 
 
         while (true)
         {
-            // Dùng phép chia lấy dư (%) để nó tự quay vòng lại từ đầu nếu hết danh sách
             int vIndex = step % validCases.Length;
             int iIndex = step % invalidCases.Length;
 
             TutorialCase currentValid = validCases[vIndex];
             TutorialCase currentInvalid = invalidCases[iIndex];
 
-            // --- BƯỚC 1: TẮT HẾT CÁC CASE KHÁC CŨ ĐI ---
-            foreach (var c in validCases) c.wholeSetup.SetActive(false);
-            foreach (var c in invalidCases) c.wholeSetup.SetActive(false);
+            foreach (var c in validCases)
+            {
+                c.wholeSetup.SetActive(false);
+            }
 
-            // --- BƯỚC 2: BẬT CASE HIỆN TẠI LÊN (Chưa có đường nối) ---
+            foreach (var c in invalidCases)
+            {
+                c.wholeSetup.SetActive(false);
+            }
+
             currentValid.wholeSetup.SetActive(true);
             currentValid.lineAndResult.SetActive(false);
 
             currentInvalid.wholeSetup.SetActive(true);
             currentInvalid.lineAndResult.SetActive(false);
 
-            yield return new WaitForSeconds(1.0f); // Dừng 1 giây để người chơi nhìn 2 con Pikachu
+            yield return new WaitForSeconds(1.0f); 
 
-            // --- BƯỚC 3: BẬT ĐƯỜNG NỐI & DẤU CHÉO/TICK LÊN (Tạo hiệu ứng bùm) ---
             currentValid.lineAndResult.SetActive(true);
             currentInvalid.lineAndResult.SetActive(true);
 
-            yield return new WaitForSeconds(2.0f); // Giữ nguyên hiện trường 2 giây để người chơi đọc Text
+            yield return new WaitForSeconds(2.0f);
 
-            // --- Tăng lượt chơi để vòng lặp sau chiếu Slide tiếp theo ---
             step++;
         }
     }
