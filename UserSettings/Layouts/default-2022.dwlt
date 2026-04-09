@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1433.6
     height: 854.4
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 72
+  controlID: 77
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 72a10000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 04bcfeff56bdfeff
+      m_ExpandedIDs: e2bafeff16bcfeff3ebdfeff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -812,9 +812,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.18446325, y: 0.29566666, z: 1420.5364}
+    m_Target: {x: 0.22088957, y: 0.11568995, z: 1341.2317}
     speed: 2
-    m_Value: {x: 0.18446325, y: 0.29566666, z: 1420.5364}
+    m_Value: {x: 0.23868477, y: -0.018960476, z: 1279.7192}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -864,9 +864,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.0525346
+    m_Target: 6.680781
     speed: 2
-    m_Value: 7.0525346
+    m_Value: 6.3930917
   m_Ortho:
     m_Target: 1
     speed: 2
