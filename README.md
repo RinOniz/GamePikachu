@@ -6,5 +6,4 @@
 - Tải Visual Studio 2022, cài đặt mục Game Dev C# để có thể chỉnh sửa code, tương tác với Unity Editor.
 
 2. Hướng dẫn trải nghiệm game trên web.
-- Truy cập vào trang web: " https://itch.io/ ", đăng ký/đăng nhập tài khoản.
 - Truy cập đường link " https://rinoniz.itch.io/pikachu ", chọn Run Game để chơi.
